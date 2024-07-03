@@ -1,14 +1,72 @@
-
-*{
-  padding:0;
+* {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
- 
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+  margin-inline: 30px;
+}
+
+ul {
+  list-style: none;
+  margin: 20px 30px;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #087ba8;
+  color: aliceblue;
+  padding: 20px;
+}
+h3 {
+  padding: 5px;
+}
+
+li {
+  padding: 10px;
+}
+
+form {
+  padding: 20px;
+  width: 350px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+input {
+  padding: 10px;
+  font-size: 90%;
+  border: none;
+  background-color: aliceblue;
+}
+textarea {
+  height: 100px;
+  background-color: aliceblue;
+  border: none;
+}
+button {
+  padding: 8px 15px;
+  background-color: #087ba8;
+  color:white;
+  margin:10px;
+  border:none;
+  border-radius: 5px;
+}
+
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -4,14 +4,16 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
-     h1=title
-     form(method="POST",action="/new")
-      div 
-        label(for='user') Name:
-        input(type='text', name='user', id='user' required)
-      div
-        label(for='text') Message:
-        textarea(name='text', id='text', required)
-      div
-        button(type='submit') Submit
+   block content
+  div(class="heading-container")
+    h1= title
+  div(class='form-container')
+   form(method="POST", action="/new")
+    div(class='input')
+      label(for='user') Name:
+      input(type='text', name='user', id='user', required)
+    div(class='input')
+      label(for='text') Message:
+      textarea(name='text', id='text', required)
+    div
+      button(type='submit') Submit

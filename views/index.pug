@@ -1,8 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(class="heading-container")
+    h1= title
+    h3 Welcome to #{title} !
   ul
     each message in messages
       li
